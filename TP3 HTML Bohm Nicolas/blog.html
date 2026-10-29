@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Tecnológico</title>
+</head>
+<body>
+
+    <!-- 1. Header -->
+    <header>
+        <h1>Blog de Programación y Tecnología</h1>
+        <nav aria-label="Menú principal de navegación">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#articulos">Artículos</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 2. Main -->
+    <main tabindex="0" id="inicio">
+        
+        <!-- Primer Artículo -->
+        <article>
+            <h2>Introducción a la Semántica en HTML5</h2>
+            <p>El uso correcto de etiquetas semánticas no solo mejora la legibilidad del código fuente, sino que también optimiza la accesibilidad y el posicionamiento SEO de un sitio web.</p>
+            <p>Principales ventajas de una estructura limpia:</p>
+            <ul>
+                <li>Facilita la lectura para lectores de pantalla.</li>
+                <li>Estructura clara para motores de búsqueda.</li>
+                <li>Mantenimiento del código simplificado.</li>
+            </ul>
+        </article>
+
+        <!-- Segundo Artículo -->
+        <article>
+            <h2>Buenas Prácticas de Accesibilidad Web</h2>
+            <p>La accesibilidad web garantiza que personas con discapacidades puedan navegar e interactuar de manera fluida con las páginas de internet.</p>
+            <p>Pasos fundamentales a implementar:</p>
+            <ol>
+                <li>Asociar correctamente etiquetas <code>&lt;label&gt;</code> con sus respectivos controles.</li>
+                <li>Utilizar atributos descriptivos como <code>aria-label</code>.</li>
+                <li>Gestionar adecuadamente el foco mediante <code>tabindex</code>.</li>
+            </ol>
+        </article>
+
+        <!-- 3. Aside -->
+        <aside>
+            <h3>Enlaces Relacionados</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
+                <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">W3C Web Accessibility Initiative</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- 4. Footer -->
+    <footer id="contacto">
+        <h3>Tabla de Contactos</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Gómez</td>
+                    <td>ana.gomez@ejemplo.com</td>
+                    <td>Desarrolladora Frontend</td>
+                </tr>
+                <tr>
+                    <td>Carlos Pérez</td>
+                    <td>carlos.perez@ejemplo.com</td>
+                    <td>Administrador de Base de Datos</td>
+                </tr>
+                <tr>
+                    <td>Lucía Fernández</td>
+                    <td>lucia.fernandez@ejemplo.com</td>
+                    <td>Ingeniera de Software</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&copy; 2026 - Tecnicatura Universitaria en Programación</p>
+    </footer>
+
+</body>
+</html>

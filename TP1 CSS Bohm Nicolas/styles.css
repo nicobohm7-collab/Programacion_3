@@ -1,0 +1,147 @@
+:root {
+    --color-fondo: #eef2f3;
+    --color-texto: #2c3e50;
+    --color-acento: #3498db;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fuente-cita: 'Georgia', serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 2. Selectores en CSS */
+#parrafo-id {
+    color: #e74c3c;
+    font-weight: bold;
+    background-color: #fde8e8;
+    padding: 10px;
+    border-left: 4px solid #e74c3c;
+}
+
+.parrafo-clase {
+    color: #27ae60;
+    font-style: italic;
+    background-color: #eafaf1;
+    padding: 10px;
+    border-left: 4px solid #27ae60;
+}
+
+p {
+    color: #34495e;
+}
+
+/* 3. Modificación de Texto */
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.texto-espaciado {
+    line-height: 2.2;
+    letter-spacing: 2px;
+}
+
+.cita-estilizada {
+    font-family: var(--fuente-cita);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #555;
+    border-left: 3px solid #8e44ad;
+    margin: 15px 0;
+    padding-left: 15px;
+}
+
+/* 4. Modelo de Caja */
+/* 
+   Diferencia entre content-box y border-box:
+   - content-box: el ancho y alto aplican solo al contenido, sumándose padding y border por fuera.
+   - border-box: el ancho y alto incluyen el contenido, el padding y los bordes, evitando que la caja crezca inesperadamente.
+*/
+.tarjeta-perfil {
+    box-sizing: border-box;
+    width: 280px;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cuadrado-color {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* 5. Display y Visibility */
+.galeria-contenedor {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.tarjeta-mini {
+    width: 100px;
+    height: 60px;
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.display-block .tarjeta-mini {
+    display: block;
+}
+
+.display-inline .tarjeta-mini {
+    display: inline;
+}
+
+.display-inline-block .tarjeta-mini {
+    display: inline-block;
+}
+
+.btn-none {
+    display: none;
+}
+
+.btn-hidden {
+    visibility: hidden;
+}
+
+.explicacion-visibilidad {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+/* 6. Variables CSS */
+.tarjeta-variable {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 2px solid var(--color-acento);
+    padding: 20px;
+    border-radius: 8px;
+}

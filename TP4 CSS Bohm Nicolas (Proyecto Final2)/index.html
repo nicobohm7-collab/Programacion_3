@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Barra de navegación -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="logo">Mi sitio web</h1>
+            
+            <nav class="nav">
+                <a href="#inicio" class="nav__link">Inicio</a>
+                <a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a>
+                <a href="#servicios" class="nav__link">Servicios</a>
+                <a href="#contacto" class="nav__link">Contacto</a>
+            </nav>
+
+            <!-- Botón menú hamburguesa (visible en móvil) -->
+            <button class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Principal / Hero -->
+    <section class="banner" id="inicio">
+        <div class="banner__content">
+            <h2>Blenvenido a Nuestro Sitio Web</h2>
+            <p>Explora nuestros serivicios y descubre como podemos ayudarte</p>
+            <a href="#servicios" class="btn">Descubrir mas</a>
+        </div>
+    </section>
+
+    <!-- Sección de Características -->
+    <main class="main" id="servicios">
+        <h2 class="section-title">Nuestras Características</h2>
+        
+        <div class="cards-container">
+            <article class="card">
+                <h3>Calidad</h3>
+                <p>Ofrecemos productos y servicios de la mas alta calidad.</p>
+            </article>
+
+            <article class="card">
+                <h3>Innovacion</h3>
+                <p>Nos mantenemos a la vanguardia con las ultimas tecnologias.</p>
+            </article>
+
+            <article class="card">
+                <h3>Soporte</h3>
+                <p>Estamos aqui para ayudarte en todo momento.</p>
+            </article>
+
+            <article class="card">
+                <h3>Sostinibilidad</h3>
+                <p>Ciomprometidos con practicas que protegen el medio ambiente.</p>
+            </article>
+
+            <article class="card">
+                <h3>Confianza</h3>
+                <p>Construimos relaciones basadas en la trasparencia y la confianza.</p>
+            </article>
+
+            <article class="card">
+                <h3>Personalizacion</h3>
+                <p>Ofrecemos soluciones adaptadas a las necesidades especificas de cada cliente.</p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <p>&copy;2024 Mi Sitio Web. Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

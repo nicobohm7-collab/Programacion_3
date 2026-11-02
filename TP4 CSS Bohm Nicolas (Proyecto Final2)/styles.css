@@ -1,0 +1,205 @@
+/* Reset global y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Variables globales de CSS */
+:root {
+    --bgColor: #f4f4f4;
+    --bgColorOscuro: #333;
+    --colorTexto: #fff;
+    --colorTextoOscuro: #333;
+    --colorBanner: #ff5733;
+    --shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    --maxWidth: 2000px;
+    --borderRadius: 16px;
+}
+
+body {
+    background-color: var(--bgColor);
+    color: var(--colorTextoOscuro);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: var(--bgColorOscuro);
+    color: var(--colorTexto);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__container {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav__link {
+    color: var(--colorTexto);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: var(--colorBanner);
+}
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--colorTexto);
+}
+
+/* Banner / Hero */
+.banner {
+    background-color: var(--colorBanner);
+    color: var(--colorTexto);
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    margin: 1.5rem auto;
+    max-width: 95%;
+    border-radius: var(--borderRadius);
+}
+
+.banner__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner__content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.banner__content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--bgColorOscuro);
+    color: var(--colorTexto);
+    padding: 0.6rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Sección principal y Contenedor de Características */
+.main {
+    max-width: var(--maxWidth);
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--bgColorOscuro);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--colorTexto);
+    padding: 2rem 1.5rem;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: var(--bgColorOscuro);
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--bgColorOscuro);
+    color: var(--colorTexto);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   DISEÑO RESPONSIVO (Media Queries)
+   ========================================== */
+
+/* Tablet (hasta 1024px) */
+@media (max-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (hasta 768px) */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Se oculta el menú y aparece el botón hamburguesa */
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; /* Una sola columna en celulares tal como el diseño Mobile 1 y 2 */
+    }
+
+    .banner__content h2 {
+        font-size: 1.6rem;
+    }
+}

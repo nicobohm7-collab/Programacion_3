@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de los simpsons</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Api de los simpsons</h1>
+        <p>Explora los personajes de la serie y sus frases célebres</p>
+    </header>
+
+    <section class="controls">
+        <button id="btnCargar">Cargar Personajes</button>
+    </section>
+
+    <section id="loadingSection" class="hidden">
+        <div class="spinner"></div>
+        <p>Cargando personajes...</p>
+    </section>
+
+    <div id="errorContainer" class="hidden"></div>
+
+    <section id="charactersContainer">
+        <!-- Las tarjetas se inyectarán dinámicamente aquí -->
+    </section>
+
+    <footer>
+        <a href="https://thesimpsonsapi.com/" target="_blank">Documentación de la API</a>
+    </footer>
+
+    <script type="module" src="dist/main.js"></script>
+</body>
+</html>

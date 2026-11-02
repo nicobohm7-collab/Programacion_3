@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico - JS Avanzado</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .resaltado { color: #2563eb; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- Punto 6: Manipulación del DOM -->
+    <h1 id="tituloPrincipal">Título Inicial</h1>
+    <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+    </ul>
+
+    <hr>
+
+    <!-- Punto 7 y 9: Eventos Click e Input -->
+    <h3>Agregar elemento a la lista</h3>
+    <input type="text" id="inputTarea" placeholder="Escribe algo...">
+    <button id="btnAgregar">Agregar</button>
+
+    <hr>
+
+    <!-- Punto 8: Evento Submit -->
+    <h3>Formulario con preventDefault</h3>
+    <form id="miFormulario">
+        <input type="text" id="inputForm" placeholder="Dato de formulario...">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <hr>
+
+    <!-- Punto 9: Evento Change con Select -->
+    <h3>Selector de opciones</h3>
+    <select id="miSelect">
+        <option value="">Selecciona una opción</option>
+        <option value="Opción A">Opción A</option>
+        <option value="Opción B">Opción B</option>
+        <option value="Opción C">Opción C</option>
+    </select>
+    <p>Opción elegida: <span id="resultadoSelect" class="resaltado">Ninguna</span></p>
+
+    <!-- Vinculación del script -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+/* ==========================================
+   RESET Y VARIABLES CSS (Bloque 2)
+   ========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colores */
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #2563eb;
+  --primary-600: #1d4ed8;
+  --primary-700: #1e40af;
+  --accent: #16a34a;
+  --danger: #dc2626;
+
+  /* Estructura y sombras */
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(15, 23, 42, 0.08);
+  --container: 1100px;
+
+  /* Escala de Espacios */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  padding-bottom: var(--space-12);
+}
+
+/* ==========================================
+   LAYOUT Y PANELES (Bloque 1)
+   ========================================== */
+.main-container {
+  max-width: var(--container);
+  margin: var(--space-8) auto 0;
+  padding: 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  box-shadow: var(--shadow);
+}
+
+.panel__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.code-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-5);
+}
+
+/* ==========================================
+   HEADER RESPONSIVO (Bloque 2)
+   ========================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--panel);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.site-header__container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.site-header__mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  font-weight: 800;
+}
+
+.site-header__nav {
+  display: flex;
+  gap: var(--space-6);
+}
+
+.site-header__link {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.site-header__link:hover {
+  color: var(--primary);
+}
+
+.site-header__menu-btn {
+  display: none;
+  background: #f1f5f9;
+  border: none;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--space-2);
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ==========================================
+   SISTEMA DE BOTONES (Bloque 3)
+   ========================================== */
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  min-height: 40px;
+  border-radius: 9999px; /* Botones redondeados tipo píldora */
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* Variantes de Botones */
+.btn--primary {
+  background-color: var(--primary);
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: var(--primary-600);
+}
+.btn--primary:active {
+  background-color: var(--primary-700);
+}
+
+.btn--secondary {
+  background-color: #e2e8f0;
+  color: var(--text);
+}
+.btn--secondary:hover {
+  background-color: #cbd5e1;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border-color: #cbd5e1;
+  color: var(--primary);
+}
+.btn--outline:hover {
+  border-color: var(--primary);
+  background-color: #eff6ff;
+}
+
+.btn--danger {
+  background-color: var(--danger);
+  color: #fff;
+}
+.btn--danger:hover {
+  background-color: #b91c1c;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ==========================================
+   TARJETA DE PRODUCTO (Bloque 4)
+   ========================================== */
+.product-card {
+  max-width: 340px;
+  background: var(--panel);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #f1f5f9;
+}
+
+.product-card__media {
+  position: relative;
+  background-color: #f1f5f9;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+}
+
+.product-card__badge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  background-color: #f59e0b;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: var(--space-1) var(--space-3);
+  border-radius: 9999px;
+  z-index: 2;
+}
+
+.product-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen conservando proporción */
+}
+
+.product-card__info {
+  padding: var(--space-5);
+}
+
+.product-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.product-card__description {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: var(--space-4);
+}
+
+.product-card__price-box {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.product-card__price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.product-card__old-price {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.product-card__actions {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.product-card__actions .btn {
+  flex: 1;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================== */
+@media (max-width: 768px) {
+  .site-header__nav {
+    display: none; /* Se oculta el menú en mobile */
+  }
+
+  .site-header__menu-btn {
+    display: flex; /* Aparece el botón hamburguesa en mobile */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-card {
+    max-width: 100%; /* En móviles la tarjeta ocupa todo el ancho disponible */
+  }
+}

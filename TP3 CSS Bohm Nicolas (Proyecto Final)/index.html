@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiTienda - TP Integrador CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER RESPONSIVO -->
+  <header class="site-header">
+    <div class="site-header__container">
+      <a href="#top" class="site-header__logo" aria-label="Inicio">
+        <span class="site-header__mark" aria-hidden="true">M</span>
+        <span>MiTienda</span>
+      </a>
+
+      <!-- Navegación Desktop / Tablet -->
+      <nav class="site-header__nav">
+        <a href="#novedades" class="site-header__link">Novedades</a>
+        <a href="#ofertas" class="site-header__link">Ofertas</a>
+        <a href="#contacto" class="site-header__link">Contacto</a>
+      </nav>
+
+      <!-- Botón Menú Hamburguesa (Mobile) -->
+      <button class="site-header__menu-btn" aria-label="Abrir menú">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="main-container">
+
+    <!-- BLOQUE 1 Y 3: SISTEMA DE BOTONES -->
+    <section class="panel">
+      <h2 class="panel__title">1) Sistema de Botones</h2>
+      <p class="code-note">Base + variantes. Observa padding, radio, foco, hover/active. Usa Flex para el grupo.</p>
+
+      <div class="btn-group">
+        <button class="btn btn--primary">Primario</button>
+        <button class="btn btn--secondary">Secundario</button>
+        <button class="btn btn--outline">Outline</button>
+        <button class="btn btn--danger">Peligro</button>
+        
+        <button class="btn btn--primary btn--icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          Con icono
+        </button>
+
+        <button class="btn btn--secondary" disabled>Deshabilitado</button>
+      </div>
+    </section>
+
+    <!-- BLOQUE 4: TARJETA DE PRODUCTO -->
+    <section class="panel">
+      <h2 class="panel__title">2) Tarjeta de Producto</h2>
+
+      <article class="product-card">
+        <div class="product-card__media">
+          <span class="product-card__badge">Nuevo</span>
+          <img src="zapatillas.webp" alt="Zapatillas Runner Pro" class="product-card__img">
+        </div>
+
+        <div class="product-card__info">
+          <h3 class="product-card__title">Zapatillas Runner Pro</h3>
+          <p class="product-card__description">
+            Amortiguación ligera, malla respirable y suela antideslizante. Perfectas para entrenar todos los días.
+          </p>
+
+          <div class="product-card__price-box">
+            <span class="product-card__price">$ 24.999</span>
+            <span class="product-card__old-price">$ 29.999</span>
+          </div>
+
+          <div class="product-card__actions">
+            <button class="btn btn--primary">Comprar ahora</button>
+            <button class="btn btn--outline btn--icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              Añadir
+            </button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- BLOQUE 6: SECCIONES DE RELLENO Y NAVEGACIÓN POR ANCLAS -->
+    <section id="novedades" class="panel">
+      <h2 class="panel__title">Novedades</h2>
+      <p class="code-note">Sección de relleno para probar el menú.</p>
+    </section>
+
+    <section id="ofertas" class="panel">
+      <h2 class="panel__title">Ofertas</h2>
+      <p class="code-note">Otra sección de relleno.</p>
+    </section>
+
+    <section id="contacto" class="panel">
+      <h2 class="panel__title">Contacto</h2>
+      <p class="code-note">Más contenido de ejemplo.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
